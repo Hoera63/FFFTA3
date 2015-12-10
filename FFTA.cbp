@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="FFTA" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/FFTA" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/Debug" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/FFTA" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/Release" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="$(#irrlicht.include)" />
+			<Add directory="$(#audiere.include)" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="gdi32" />
+			<Add library="E:\Program Files\audiere-1.9.4-win32\lib\audiere.a" />
+			<Add directory="$(#irrlicht.lib)" />
+			<Add directory="$(#audiere.lib)" />
+		</Linker>
+		<Unit filename="Source/Code/ActionMenuBlock.cpp" />
+		<Unit filename="Source/Code/AnimatedSprite.cpp" />
+		<Unit filename="Source/Code/AnimatingObject.cpp" />
+		<Unit filename="Source/Code/Animation.cpp" />
+		<Unit filename="Source/Code/BattleField.cpp" />
+		<Unit filename="Source/Code/BattleFieldPosition.cpp" />
+		<Unit filename="Source/Code/GetIrrlicht.cpp" />
+		<Unit filename="Source/Code/HitDataBlock.cpp" />
+		<Unit filename="Source/Code/Job.cpp" />
+		<Unit filename="Source/Code/JobRace.cpp" />
+		<Unit filename="Source/Code/NamedObject.cpp" />
+		<Unit filename="Source/Code/PathFinder.cpp" />
+		<Unit filename="Source/Code/Project.cpp" />
+		<Unit filename="Source/Code/Race.cpp" />
+		<Unit filename="Source/Code/SelectableTile.cpp" />
+		<Unit filename="Source/Code/Selector.cpp" />
+		<Unit filename="Source/Code/Unit.cpp" />
+		<Unit filename="Source/Code/UnitDataBlock.cpp" />
+		<Unit filename="Source/Code/UpdatingObject.cpp" />
+		<Unit filename="Source/Code/XMLObject.cpp" />
+		<Unit filename="Source/Header/ActionMenuBlock.h" />
+		<Unit filename="Source/Header/AnimatedSprite.h" />
+		<Unit filename="Source/Header/AnimatingObject.h" />
+		<Unit filename="Source/Header/Animation.h" />
+		<Unit filename="Source/Header/BattleField.h" />
+		<Unit filename="Source/Header/BattleFieldPosition.h" />
+		<Unit filename="Source/Header/GetIrrlicht.h" />
+		<Unit filename="Source/Header/HitDataBlock.h" />
+		<Unit filename="Source/Header/Job.h" />
+		<Unit filename="Source/Header/JobRace.h" />
+		<Unit filename="Source/Header/MastEventReceiver.h" />
+		<Unit filename="Source/Header/NamedObject.h" />
+		<Unit filename="Source/Header/PathFinder.h" />
+		<Unit filename="Source/Header/Project.h" />
+		<Unit filename="Source/Header/Race.h" />
+		<Unit filename="Source/Header/SelectableTile.h" />
+		<Unit filename="Source/Header/Selector.h" />
+		<Unit filename="Source/Header/Unit.h" />
+		<Unit filename="Source/Header/UnitDataBlock.h" />
+		<Unit filename="Source/Header/UpdatingObject.h" />
+		<Unit filename="Source/Header/XMLObject.h" />
+		<Unit filename="Source/main.cpp" />
+		<Extensions>
+			<DoxyBlocks>
+				<comment_style block="4" line="2" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
